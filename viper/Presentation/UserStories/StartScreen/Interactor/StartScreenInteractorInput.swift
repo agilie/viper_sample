@@ -6,8 +6,6 @@
 //  Copyright © 2017 Agilie. All rights reserved.
 //
 
-//import PromiseKit
-
 /**
  * Presenter -> Interactor
  */

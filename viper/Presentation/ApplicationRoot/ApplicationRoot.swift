@@ -23,7 +23,7 @@ class ApplicationRoot: NSObject {
         let services =  ServicesAssembly.shared
         let presentation = PresentationAssembly.shared
                         
-        presentation.setup(withNavigation: navigation, modules: modules, urlScheme: "wirex", services: services)
+        presentation.setup(withNavigation: navigation, modules: modules, urlScheme: "viper", services: services)
         
         router = presentation.router
         whisper = presentation.whisper

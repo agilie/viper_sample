@@ -7,8 +7,6 @@
 //
 
 import Foundation
-//import PromiseKit
-//import CocoaLumberjack
 
 class StartScreenPresenter {
 
