@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0315942524F37045352B3D10 /* StartScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7ECCB1F07EA91280ECCE9F /* StartScreenFactory.swift */; };
+		0919722E805A789BF96FAD10 /* StartScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9A5A3DB15FB17AB8776E77 /* StartScreenViewInput.swift */; };
+		101B1EFCE1882BF088067A83 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184361798DFFCCEF4ECF28D /* StartScreenViewController.swift */; };
+		1B30E5FE073B189AF69A47F6 /* StartScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C42B881F83369225D200D9 /* StartScreenConfigurator.swift */; };
+		23899A163632510585A05975 /* StartScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E331DF9A138518B207546FF3 /* StartScreenInteractor.swift */; };
+		CCED45E270B2FB9392DFA6F5 /* StartScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61EC94FFE13887D98E274C5 /* StartScreenInteractorInput.swift */; };
 		CDE8A73E1E2E6F2B00B14CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A73D1E2E6F2B00B14CCB /* AppDelegate.swift */; };
-		CDE8A7401E2E6F2B00B14CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A73F1E2E6F2B00B14CCB /* ViewController.swift */; };
-		CDE8A7431E2E6F2B00B14CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8A7411E2E6F2B00B14CCB /* Main.storyboard */; };
 		CDE8A7451E2E6F2B00B14CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE8A7441E2E6F2B00B14CCB /* Assets.xcassets */; };
 		CDE8A7481E2E6F2B00B14CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8A7461E2E6F2B00B14CCB /* LaunchScreen.storyboard */; };
+		CDE8A7581E2E715B00B14CCB /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A7571E2E715B00B14CCB /* ServicesAssembly.swift */; };
+		CDE8A75A1E2E71C600B14CCB /* ServicesAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A7591E2E71C600B14CCB /* ServicesAssemblyProtocol.swift */; };
+		CDE8A75C1E2E723E00B14CCB /* ServicesAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A75B1E2E723E00B14CCB /* ServicesAssemblyImpl.swift */; };
+		CDE8A75E1E2E735700B14CCB /* ApplicationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A75D1E2E735700B14CCB /* ApplicationRoot.swift */; };
+		CDE8A7601E2E73FC00B14CCB /* PresentationAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A75F1E2E73FC00B14CCB /* PresentationAssemblyProtocol.swift */; };
+		CDE8A7621E2E740900B14CCB /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A7611E2E740900B14CCB /* PresentationAssembly.swift */; };
+		CDE8A7651E2E754900B14CCB /* InAppNotificationsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A7641E2E754900B14CCB /* InAppNotificationsProvider.swift */; };
+		CDE8A7671E2E755300B14CCB /* InAppNotificationsProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A7661E2E755300B14CCB /* InAppNotificationsProviderImpl.swift */; };
+		CDE8A7691E2E796900B14CCB /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A7681E2E796900B14CCB /* AppRouterProtocol.swift */; };
+		CDE8A76B1E2E797200B14CCB /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A76A1E2E797200B14CCB /* AppRouter.swift */; };
+		CDE8A76D1E2E79B800B14CCB /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A76C1E2E79B800B14CCB /* ModuleFactoryProtocol.swift */; };
+		CDE8A76F1E2F8FE100B14CCB /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8A76E1E2F8FE100B14CCB /* StartScreen.storyboard */; };
+		CDE8A7711E2F916100B14CCB /* ModuleInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A7701E2F916100B14CCB /* ModuleInputProtocol.swift */; };
+		E6E35B61311E3E6C700C3D93 /* StartScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC027CCC139476040B8FD6F2 /* StartScreenViewOutput.swift */; };
+		ED11DA9A1A4462311890BBDB /* StartScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D8E13139A82B002D12B1D5 /* StartScreenPresenter.swift */; };
+		FEDC8104A1233C9655C2964B /* StartScreenInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478264D7EB27684D686CA56A /* StartScreenInitializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F9A5A3DB15FB17AB8776E77 /* StartScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenViewInput.swift; sourceTree = "<group>"; };
+		2E7ECCB1F07EA91280ECCE9F /* StartScreenFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenFactory.swift; sourceTree = "<group>"; };
+		478264D7EB27684D686CA56A /* StartScreenInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenInitializer.swift; sourceTree = "<group>"; };
+		A9C42B881F83369225D200D9 /* StartScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenConfigurator.swift; sourceTree = "<group>"; };
+		AC027CCC139476040B8FD6F2 /* StartScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenViewOutput.swift; sourceTree = "<group>"; };
+		C184361798DFFCCEF4ECF28D /* StartScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		C61EC94FFE13887D98E274C5 /* StartScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenInteractorInput.swift; sourceTree = "<group>"; };
 		CDE8A73A1E2E6F2B00B14CCB /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE8A73D1E2E6F2B00B14CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDE8A73F1E2E6F2B00B14CCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CDE8A7421E2E6F2B00B14CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDE8A7441E2E6F2B00B14CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE8A7471E2E6F2B00B14CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDE8A7491E2E6F2B00B14CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE8A7571E2E715B00B14CCB /* ServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		CDE8A7591E2E71C600B14CCB /* ServicesAssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssemblyProtocol.swift; sourceTree = "<group>"; };
+		CDE8A75B1E2E723E00B14CCB /* ServicesAssemblyImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssemblyImpl.swift; sourceTree = "<group>"; };
+		CDE8A75D1E2E735700B14CCB /* ApplicationRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRoot.swift; sourceTree = "<group>"; };
+		CDE8A75F1E2E73FC00B14CCB /* PresentationAssemblyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationAssemblyProtocol.swift; sourceTree = "<group>"; };
+		CDE8A7611E2E740900B14CCB /* PresentationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
+		CDE8A7641E2E754900B14CCB /* InAppNotificationsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppNotificationsProvider.swift; sourceTree = "<group>"; };
+		CDE8A7661E2E755300B14CCB /* InAppNotificationsProviderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppNotificationsProviderImpl.swift; sourceTree = "<group>"; };
+		CDE8A7681E2E796900B14CCB /* AppRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
+		CDE8A76A1E2E797200B14CCB /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		CDE8A76C1E2E79B800B14CCB /* ModuleFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactoryProtocol.swift; sourceTree = "<group>"; };
+		CDE8A76E1E2F8FE100B14CCB /* StartScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StartScreen.storyboard; sourceTree = "<group>"; };
+		CDE8A7701E2F916100B14CCB /* ModuleInputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInputProtocol.swift; sourceTree = "<group>"; };
+		E331DF9A138518B207546FF3 /* StartScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenInteractor.swift; sourceTree = "<group>"; };
+		F4D8E13139A82B002D12B1D5 /* StartScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartScreenPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +75,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A55A84A577F9E513D2501954 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4D8E13139A82B002D12B1D5 /* StartScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BB2387635082B44417F2781C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F9A5A3DB15FB17AB8776E77 /* StartScreenViewInput.swift */,
+				AC027CCC139476040B8FD6F2 /* StartScreenViewOutput.swift */,
+				C184361798DFFCCEF4ECF28D /* StartScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CDE8A7311E2E6F2B00B14CCB = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +112,128 @@
 		CDE8A73C1E2E6F2B00B14CCB /* viper */ = {
 			isa = PBXGroup;
 			children = (
+				CDE8A74F1E2E6FB400B14CCB /* Constants */,
+				CDE8A7501E2E6FBB00B14CCB /* Helpers */,
+				CDE8A7511E2E6FC200B14CCB /* Model */,
+				CDE8A7521E2E6FC900B14CCB /* Services */,
+				CDE8A7531E2E6FD100B14CCB /* Presentation */,
 				CDE8A73D1E2E6F2B00B14CCB /* AppDelegate.swift */,
-				CDE8A73F1E2E6F2B00B14CCB /* ViewController.swift */,
-				CDE8A7411E2E6F2B00B14CCB /* Main.storyboard */,
 				CDE8A7441E2E6F2B00B14CCB /* Assets.xcassets */,
 				CDE8A7461E2E6F2B00B14CCB /* LaunchScreen.storyboard */,
 				CDE8A7491E2E6F2B00B14CCB /* Info.plist */,
 			);
 			path = viper;
+			sourceTree = "<group>";
+		};
+		CDE8A74F1E2E6FB400B14CCB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CDE8A7501E2E6FBB00B14CCB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CDE8A7511E2E6FC200B14CCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDE8A7521E2E6FC900B14CCB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8A7591E2E71C600B14CCB /* ServicesAssemblyProtocol.swift */,
+				CDE8A7571E2E715B00B14CCB /* ServicesAssembly.swift */,
+				CDE8A75B1E2E723E00B14CCB /* ServicesAssemblyImpl.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDE8A7531E2E6FD100B14CCB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8A75F1E2E73FC00B14CCB /* PresentationAssemblyProtocol.swift */,
+				CDE8A7611E2E740900B14CCB /* PresentationAssembly.swift */,
+				CDE8A7541E2E6FD100B14CCB /* ApplicationRoot */,
+				CDE8A7551E2E6FD100B14CCB /* Routing */,
+				CDE8A7631E2E74B600B14CCB /* InAppNotifications */,
+				CDE8A7561E2E6FD100B14CCB /* UserStories */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CDE8A7541E2E6FD100B14CCB /* ApplicationRoot */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8A75D1E2E735700B14CCB /* ApplicationRoot.swift */,
+			);
+			path = ApplicationRoot;
+			sourceTree = "<group>";
+		};
+		CDE8A7551E2E6FD100B14CCB /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8A7681E2E796900B14CCB /* AppRouterProtocol.swift */,
+				CDE8A76A1E2E797200B14CCB /* AppRouter.swift */,
+				CDE8A76C1E2E79B800B14CCB /* ModuleFactoryProtocol.swift */,
+				CDE8A7701E2F916100B14CCB /* ModuleInputProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		CDE8A7561E2E6FD100B14CCB /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				DCB6748FCA80C385B7B247A3 /* StartScreen */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		CDE8A7631E2E74B600B14CCB /* InAppNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8A7641E2E754900B14CCB /* InAppNotificationsProvider.swift */,
+				CDE8A7661E2E755300B14CCB /* InAppNotificationsProviderImpl.swift */,
+			);
+			path = InAppNotifications;
+			sourceTree = "<group>";
+		};
+		D42820E43AF1E6EEAD7A48CE /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A9C42B881F83369225D200D9 /* StartScreenConfigurator.swift */,
+				478264D7EB27684D686CA56A /* StartScreenInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DCB6748FCA80C385B7B247A3 /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8A76E1E2F8FE100B14CCB /* StartScreen.storyboard */,
+				2E7ECCB1F07EA91280ECCE9F /* StartScreenFactory.swift */,
+				BB2387635082B44417F2781C /* View */,
+				A55A84A577F9E513D2501954 /* Presenter */,
+				E3DF058CAC41436FC07ED825 /* Interactor */,
+				D42820E43AF1E6EEAD7A48CE /* Configurator */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
+		E3DF058CAC41436FC07ED825 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C61EC94FFE13887D98E274C5 /* StartScreenInteractorInput.swift */,
+				E331DF9A138518B207546FF3 /* StartScreenInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +268,7 @@
 				TargetAttributes = {
 					CDE8A7391E2E6F2B00B14CCB = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -125,7 +297,7 @@
 			files = (
 				CDE8A7481E2E6F2B00B14CCB /* LaunchScreen.storyboard in Resources */,
 				CDE8A7451E2E6F2B00B14CCB /* Assets.xcassets in Resources */,
-				CDE8A7431E2E6F2B00B14CCB /* Main.storyboard in Resources */,
+				CDE8A76F1E2F8FE100B14CCB /* StartScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +308,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDE8A7401E2E6F2B00B14CCB /* ViewController.swift in Sources */,
+				CDE8A76B1E2E797200B14CCB /* AppRouter.swift in Sources */,
+				CDE8A7621E2E740900B14CCB /* PresentationAssembly.swift in Sources */,
+				CDE8A76D1E2E79B800B14CCB /* ModuleFactoryProtocol.swift in Sources */,
+				CDE8A7671E2E755300B14CCB /* InAppNotificationsProviderImpl.swift in Sources */,
+				CDE8A75E1E2E735700B14CCB /* ApplicationRoot.swift in Sources */,
+				CDE8A7601E2E73FC00B14CCB /* PresentationAssemblyProtocol.swift in Sources */,
+				CDE8A7581E2E715B00B14CCB /* ServicesAssembly.swift in Sources */,
+				CDE8A7651E2E754900B14CCB /* InAppNotificationsProvider.swift in Sources */,
 				CDE8A73E1E2E6F2B00B14CCB /* AppDelegate.swift in Sources */,
+				CDE8A75A1E2E71C600B14CCB /* ServicesAssemblyProtocol.swift in Sources */,
+				CDE8A7711E2F916100B14CCB /* ModuleInputProtocol.swift in Sources */,
+				CDE8A7691E2E796900B14CCB /* AppRouterProtocol.swift in Sources */,
+				CDE8A75C1E2E723E00B14CCB /* ServicesAssemblyImpl.swift in Sources */,
+				0315942524F37045352B3D10 /* StartScreenFactory.swift in Sources */,
+				0919722E805A789BF96FAD10 /* StartScreenViewInput.swift in Sources */,
+				E6E35B61311E3E6C700C3D93 /* StartScreenViewOutput.swift in Sources */,
+				101B1EFCE1882BF088067A83 /* StartScreenViewController.swift in Sources */,
+				ED11DA9A1A4462311890BBDB /* StartScreenPresenter.swift in Sources */,
+				CCED45E270B2FB9392DFA6F5 /* StartScreenInteractorInput.swift in Sources */,
+				23899A163632510585A05975 /* StartScreenInteractor.swift in Sources */,
+				1B30E5FE073B189AF69A47F6 /* StartScreenConfigurator.swift in Sources */,
+				FEDC8104A1233C9655C2964B /* StartScreenInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CDE8A7411E2E6F2B00B14CCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDE8A7421E2E6F2B00B14CCB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CDE8A7461E2E6F2B00B14CCB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -258,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = viper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.viper;
@@ -270,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = viper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.viper;
@@ -297,6 +483,7 @@
 				CDE8A74E1E2E6F2B00B14CCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

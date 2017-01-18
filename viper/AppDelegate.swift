@@ -12,10 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var appRoot: ApplicationRoot!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Setup services
+        ServicesAssembly.setup(application: application)
+        
+        // Setup UI
+        let navigationController = UINavigationController()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window!.rootViewController = navigationController
+        window!.backgroundColor = UIColor.white
+        window!.makeKeyAndVisible()
+        
+        // Start application
+        appRoot = ApplicationRoot(withNavigation: navigationController)
+        appRoot.start()
+        
         return true
     }
 
