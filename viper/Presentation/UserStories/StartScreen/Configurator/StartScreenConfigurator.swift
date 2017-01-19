@@ -24,6 +24,7 @@ class StartScreenModuleConfigurator {
         let interactor = StartScreenInteractor()
         
         presenter.interactor = interactor
+        presenter.router = PresentationAssembly.shared.router
         viewController.output = presenter
     }
 

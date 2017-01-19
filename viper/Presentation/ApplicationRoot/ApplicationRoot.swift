@@ -12,7 +12,8 @@ class ApplicationRoot: NSObject {
     
     // TODO: Add all application modules here
     let modules : Array<ModuleFactoryProtocol> = [
-        StartScreenFactory.shared
+        StartScreenFactory.shared,
+        DetailsScreenFactory.shared
     ]
 
     // MARK:

@@ -13,6 +13,8 @@ class StartScreenPresenter {
     weak var view: StartScreenViewInput!
     var interactor: StartScreenInteractorInput!
     var moduleCompletion: ModuleCompletionHandler?
+    var router: AppRouterProtocol!
+    
 }
 
 // MARK:
@@ -25,6 +27,14 @@ extension StartScreenPresenter: StartScreenViewOutput {
     func viewIsReady() {
             
     }
+    
+    func showNextScreen(parameter: String) {
+        let urn = DetailsScreenFactory.shared.createModuleURN(title: parameter)
+        self.router.pushModule(byUrn: urn, animated: true) { (_) in
+            
+        }
+    }
+    
 }
 
 

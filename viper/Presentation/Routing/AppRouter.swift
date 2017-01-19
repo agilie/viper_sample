@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Compass
 
 class AppRouterImpl: AppRouterProtocol {
 
@@ -19,6 +20,12 @@ class AppRouterImpl: AppRouterProtocol {
         _navigationController = controller
         _navigationController.setNavigationBarHidden(true, animated: false)
         modulesList = modules
+        
+        Compass.scheme = urlScheme
+        Compass.routes = modulesList.map {
+            return $0.moduleURN
+        }
+
     }
     
     // MARK:
@@ -28,8 +35,8 @@ class AppRouterImpl: AppRouterProtocol {
     }
     
     func pushModule(byUrn urn: String, animated: Bool, completion: ModuleCompletionHandler?) {
-//        guard let url = URL(string:"\(Compass.scheme)\(urn)") else {
-        guard let url = URL(string:urn) else {
+        
+        guard let url = URL(string:"\(Compass.scheme)\(urn)") else {
             fatalError("Invalid URN: \(urn)")
         }
         
@@ -41,8 +48,8 @@ class AppRouterImpl: AppRouterProtocol {
     }
     
     func replaceViewStack(rootUrn urn: String, animated: Bool, completion: ModuleCompletionHandler?) {
-//        guard let url = URL(string:"\(Compass.scheme)\(urn)") else {
-        guard let url = URL(string:urn) else {
+        
+        guard let url = URL(string:"\(Compass.scheme)\(urn)") else {
             fatalError("Invalid URN: \(urn)")
         }
         
@@ -54,8 +61,8 @@ class AppRouterImpl: AppRouterProtocol {
     }
     
     func presentModule(byUrn urn: String, animated: Bool, completion: ModuleCompletionHandler?) {
-//        guard let url = URL(string:"\(Compass.scheme)\(urn)") else {
-        guard let url = URL(string:urn) else {
+        
+        guard let url = URL(string:"\(Compass.scheme)\(urn)") else {
             fatalError("Invalid URN: \(urn)")
         }
         
@@ -88,19 +95,19 @@ class AppRouterImpl: AppRouterProtocol {
     
     private func createModule(byUrl url: URL, completion: ModuleCompletionHandler?) -> UIViewController? {
         
-//        guard let location = url else {
-//            return nil
-//        }
-        
-//        let arguments = location.arguments
-        
-//        DDLogInfo("Create module with path: '\(location.path)',  arguments: '\(arguments)'")
-        
-        let factory = modulesList.first {
-            return url.absoluteString == $0.moduleURN
+        guard let location = Compass.parse(url: url) else {
+            return nil
         }
         
-        return factory?.createModule(arguments: [:], completion: completion)
+        let arguments = location.arguments
+        
+        NSLog("Create module with path: '\(location.path)',  arguments: '\(arguments)'")
+        
+        let factory = modulesList.first {
+            return location.path == $0.moduleURN
+        }
+        
+        return factory?.createModule(arguments: arguments, completion: completion)
     }
     
 }

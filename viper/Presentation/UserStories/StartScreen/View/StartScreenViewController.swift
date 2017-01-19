@@ -16,7 +16,24 @@ class StartScreenViewController: UIViewController {
         output.viewIsReady()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+
     // MARK: Handlers
+    @IBAction func showDetailsFirst(_ sender: UIButton) {
+        showDetailsFirst()
+    }
+    
+    @IBAction func showDetailsSecond(_ sender: UIButton) {
+        showDetailsSecond()
+    }
 
     // MARK:
     var output: StartScreenViewOutput!
@@ -35,5 +52,17 @@ extension StartScreenViewController: ModuleInputProtocol {
 
 // MARK:
 extension StartScreenViewController: StartScreenViewInput {
+
+}
+
+extension StartScreenViewController {
+    
+    func showDetailsFirst() {
+        self.output.showNextScreen(parameter: "FirstTitle")
+    }
+
+    func showDetailsSecond() {
+        self.output.showNextScreen(parameter: "SecondTitle")
+    }
 
 }
