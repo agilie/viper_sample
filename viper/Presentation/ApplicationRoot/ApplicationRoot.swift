@@ -34,7 +34,7 @@ class ApplicationRoot: NSObject {
 
     func start() {
         let urn = StartScreenFactory.shared.moduleURN
-        router.pushModule(byUrn: urn, animated: true, completion: { [unowned self] (_) in
+        router.pushModule(byUrn: urn, animated: true, completion: { (_) in
             //completion
         })
     }
