@@ -22,6 +22,7 @@ class DetailsScreenModuleConfigurator {
         presenter.view = viewController
         
         let interactor = DetailsScreenInteractor()
+        interactor.weatherService = ServicesAssembly.shared.weatherService
         
         presenter.interactor = interactor
         viewController.output = presenter

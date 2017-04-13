@@ -7,10 +7,14 @@
 //
 
 import Foundation
+import PromiseKit
 
 /**
  * Presenter -> Interactor
  */
 protocol DetailsScreenInteractorInput {
+
+    func city(with id: Int) -> City?
+    func obtainCurrentWeather(for cityId: Int) -> Promise<CurrentWeather>
 
 }

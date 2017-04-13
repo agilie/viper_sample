@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 class DetailsScreenPresenter {
 
@@ -25,6 +26,39 @@ extension DetailsScreenPresenter: DetailsScreenViewOutput {
     func viewIsReady() {
             
     }
+    
+    func city(with id: Int) -> City? {
+        return interactor.city(with: id)
+    }
+    
+    func requestWeather(for cityId: Int) {
+        interactor.obtainCurrentWeather(for: cityId)
+        .then { (weather) -> Void in
+            if self.view != nil {
+                self.view.assignWeather(weather)
+            }
+        }
+        .catch { (error) in
+            if let viewController = self.view as? UIViewController {
+                self.showError(error, for: viewController)
+            }
+        }
+    }
+
 }
 
+extension DetailsScreenPresenter {
+    
+    func showError(_ error: Error, for controller: UIViewController) {
+        var errorMessage = error.localizedDescription
+        if let apiError = error as? APIError {
+            errorMessage = apiError.message
+        }
+        let alert = UIAlertController.init(title: "Error", message: errorMessage, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        controller.present(alert, animated: true, completion: nil)
+    }
+    
+}
 

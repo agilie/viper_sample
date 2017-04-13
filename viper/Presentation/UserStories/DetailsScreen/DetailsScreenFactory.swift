@@ -18,7 +18,7 @@ struct DetailsScreenFactory : ModuleFactoryProtocol {
 
     // MARK: ModuleFactoryProtocol
     var moduleURN: String {
-        return "DetailsScreen:{title}"
+        return "DetailsScreen:{cityId}"
     }
 
     func createModule(arguments: NamedValuesType, completion: ModuleCompletionHandler?) -> UIViewController {

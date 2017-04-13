@@ -13,4 +13,7 @@ protocol DetailsScreenViewOutput {
 
 	func setupInitialState(withArguments args: NamedValuesType, completion: ModuleCompletionHandler?)
   	func viewIsReady()
+    func city(with id: Int) -> City?
+    func requestWeather(for cityId: Int)
+
 }

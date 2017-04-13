@@ -11,4 +11,6 @@
  */
 protocol StartScreenInteractorInput {
 
+    var cities: [City] { get }
+    
 }

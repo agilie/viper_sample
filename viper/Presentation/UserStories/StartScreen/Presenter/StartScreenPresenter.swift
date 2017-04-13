@@ -29,10 +29,15 @@ extension StartScreenPresenter: StartScreenViewOutput {
     }
     
     func showNextScreen(parameter: String) {
-        let urn = DetailsScreenFactory.shared.createModuleURN(title: parameter)
+        let title = parameter.replacingOccurrences(of: " ", with: "_")
+        let urn = DetailsScreenFactory.shared.createModuleURN(title: title)
         self.router.pushModule(byUrn: urn, animated: true) { (_) in
             
         }
+    }
+    
+    var cities: [City] {
+        return interactor.cities
     }
     
 }

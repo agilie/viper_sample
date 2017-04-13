@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import PromiseKit
 
 class DetailsScreenInteractor {
+
+    var weatherService: WeatherService!
 
 }
 
@@ -17,4 +20,12 @@ class DetailsScreenInteractor {
  */
 extension DetailsScreenInteractor: DetailsScreenInteractorInput {
 	
+    func city(with id: Int) -> City? {
+        return weatherService.city(with: id)
+    }
+    
+    func obtainCurrentWeather(for cityId: Int) -> Promise<CurrentWeather> {
+        return weatherService.obtainCurrentWeather(for: cityId)
+    }
+
 }

@@ -7,16 +7,20 @@
 //
 
 import Foundation
-//import PromiseKit
-//import CocoaLumberjack
 
 class StartScreenInteractor {
 
+    var weatherService: WeatherService!
+    
 }
 
 /**
  * Presenter -> Interactor
  */
 extension StartScreenInteractor: StartScreenInteractorInput {
-	
+
+    var cities: [City] {
+        return weatherService.cities
+    }
+
 }

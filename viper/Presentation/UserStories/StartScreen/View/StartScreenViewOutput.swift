@@ -15,5 +15,6 @@ protocol StartScreenViewOutput {
   	func viewIsReady()
     
     func showNextScreen(parameter: String)
+    var cities: [City] { get }
     
 }

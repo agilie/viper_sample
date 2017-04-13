@@ -11,4 +11,6 @@
  */
 protocol DetailsScreenViewInput: class {
 
+    func assignWeather(_ weather: CurrentWeather)
+    
 }

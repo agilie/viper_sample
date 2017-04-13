@@ -22,6 +22,7 @@ class StartScreenModuleConfigurator {
         presenter.view = viewController
         
         let interactor = StartScreenInteractor()
+        interactor.weatherService = ServicesAssembly.shared.weatherService
         
         presenter.interactor = interactor
         presenter.router = PresentationAssembly.shared.router

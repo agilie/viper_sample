@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,51 +21,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey, VIPER!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn6-a8-Ih5">
-                                <rect key="frame" x="110" y="316" width="155" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeU-TO-T7R">
-                                <rect key="frame" x="30" y="582" width="147.5" height="55"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="0nU-C4-8ew"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <state key="normal" title="Details Title 1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-Oh-5Pp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellIdentifier" id="ZG5-TG-ofs">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZG5-TG-ofs" id="DKB-os-Hz0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="showDetailsFirst:" destination="BL3-Ns-Q02" eventType="touchUpInside" id="SLP-cG-7aN"/>
+                                    <outlet property="dataSource" destination="BL3-Ns-Q02" id="c8F-Jp-bbd"/>
+                                    <outlet property="delegate" destination="BL3-Ns-Q02" id="2pz-P7-spJ"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9b-i4-KNF">
-                                <rect key="frame" x="197.5" y="582" width="147.5" height="55"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="mb7-uL-X79"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <state key="normal" title="Details Title 2">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showDetailsSecond:" destination="BL3-Ns-Q02" eventType="touchUpInside" id="XVt-Zy-nOu"/>
-                                </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="J9b-i4-KNF" firstAttribute="leading" secondItem="LeU-TO-T7R" secondAttribute="trailing" constant="20" id="HJl-cZ-0tP"/>
-                            <constraint firstItem="6yD-Lo-pYw" firstAttribute="top" secondItem="J9b-i4-KNF" secondAttribute="bottom" constant="30" id="MOp-Jg-eOm"/>
-                            <constraint firstItem="Mn6-a8-Ih5" firstAttribute="centerY" secondItem="rHc-uS-suC" secondAttribute="centerY" id="aLs-45-cOJ"/>
-                            <constraint firstAttribute="trailing" secondItem="J9b-i4-KNF" secondAttribute="trailing" constant="30" id="h6q-qR-qRg"/>
-                            <constraint firstItem="LeU-TO-T7R" firstAttribute="width" secondItem="J9b-i4-KNF" secondAttribute="width" id="luL-cC-FON"/>
-                            <constraint firstItem="LeU-TO-T7R" firstAttribute="leading" secondItem="rHc-uS-suC" secondAttribute="leading" constant="30" id="ooH-gz-8A7"/>
-                            <constraint firstItem="Mn6-a8-Ih5" firstAttribute="centerX" secondItem="rHc-uS-suC" secondAttribute="centerX" id="rsz-of-Coc"/>
-                            <constraint firstItem="6yD-Lo-pYw" firstAttribute="top" secondItem="LeU-TO-T7R" secondAttribute="bottom" constant="30" id="vgL-bl-orH"/>
+                            <constraint firstItem="6yD-Lo-pYw" firstAttribute="top" secondItem="rFY-Oh-5Pp" secondAttribute="bottom" id="D4v-YJ-PZK"/>
+                            <constraint firstAttribute="trailing" secondItem="rFY-Oh-5Pp" secondAttribute="trailing" id="XkW-7q-rvb"/>
+                            <constraint firstItem="rFY-Oh-5Pp" firstAttribute="leading" secondItem="rHc-uS-suC" secondAttribute="leading" id="m8B-0i-Paf"/>
+                            <constraint firstItem="rFY-Oh-5Pp" firstAttribute="top" secondItem="rHc-uS-suC" secondAttribute="top" id="tbW-rY-HsM"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -26,6 +26,16 @@
 		CD49E9FF1E30C80F00F089CA /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49E9FE1E30C80F00F089CA /* URLExtension.swift */; };
 		CD49EA011E30CDB100F089CA /* DetailsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD49EA001E30CDB100F089CA /* DetailsScreen.storyboard */; };
 		CD49EA031E30CE5F00F089CA /* URNBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49EA021E30CE5F00F089CA /* URNBuilder.swift */; };
+		CDB869161E9CC5130084F086 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB869151E9CC5130084F086 /* APIService.swift */; };
+		CDB869181E9CCD990084F086 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB869171E9CCD990084F086 /* RequestExecutor.swift */; };
+		CDB8691A1E9CCDB30084F086 /* APIServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB869191E9CCDB30084F086 /* APIServiceImpl.swift */; };
+		CDB8691C1E9CCDD60084F086 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8691B1E9CCDD60084F086 /* RequestBuilder.swift */; };
+		CDB8691E1E9CCDE40084F086 /* RequestExecutorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8691D1E9CCDE40084F086 /* RequestExecutorExtension.swift */; };
+		CDB869201E9CCF7D0084F086 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8691F1E9CCF7D0084F086 /* APIError.swift */; };
+		CDB869421E9CD8170084F086 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB869411E9CD8170084F086 /* CurrentWeather.swift */; };
+		CDB869451E9CD9D10084F086 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB869441E9CD9D10084F086 /* WeatherService.swift */; };
+		CDB869471E9CDA200084F086 /* WeatherServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB869461E9CDA200084F086 /* WeatherServiceImpl.swift */; };
+		CDB869491E9CDF3D0084F086 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB869481E9CDF3D0084F086 /* City.swift */; };
 		CDE8A73E1E2E6F2B00B14CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8A73D1E2E6F2B00B14CCB /* AppDelegate.swift */; };
 		CDE8A7451E2E6F2B00B14CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE8A7441E2E6F2B00B14CCB /* Assets.xcassets */; };
 		CDE8A7481E2E6F2B00B14CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8A7461E2E6F2B00B14CCB /* LaunchScreen.storyboard */; };
@@ -70,6 +80,16 @@
 		CD49E9FE1E30C80F00F089CA /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		CD49EA001E30CDB100F089CA /* DetailsScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailsScreen.storyboard; sourceTree = "<group>"; };
 		CD49EA021E30CE5F00F089CA /* URNBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URNBuilder.swift; sourceTree = "<group>"; };
+		CDB869151E9CC5130084F086 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CDB869171E9CCD990084F086 /* RequestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
+		CDB869191E9CCDB30084F086 /* APIServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceImpl.swift; sourceTree = "<group>"; };
+		CDB8691B1E9CCDD60084F086 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		CDB8691D1E9CCDE40084F086 /* RequestExecutorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExecutorExtension.swift; sourceTree = "<group>"; };
+		CDB8691F1E9CCF7D0084F086 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		CDB869411E9CD8170084F086 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		CDB869441E9CD9D10084F086 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		CDB869461E9CDA200084F086 /* WeatherServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherServiceImpl.swift; sourceTree = "<group>"; };
+		CDB869481E9CDF3D0084F086 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		CDE8A73A1E2E6F2B00B14CCB /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE8A73D1E2E6F2B00B14CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE8A7441E2E6F2B00B14CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -188,6 +208,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CDB869141E9CC4BD0084F086 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				CDB869151E9CC5130084F086 /* APIService.swift */,
+				CDB869191E9CCDB30084F086 /* APIServiceImpl.swift */,
+				CDB869171E9CCD990084F086 /* RequestExecutor.swift */,
+				CDB8691D1E9CCDE40084F086 /* RequestExecutorExtension.swift */,
+				CDB8691B1E9CCDD60084F086 /* RequestBuilder.swift */,
+			);
+			name = APIService;
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		CDB869431E9CD9C20084F086 /* WheatherService */ = {
+			isa = PBXGroup;
+			children = (
+				CDB869441E9CD9D10084F086 /* WeatherService.swift */,
+				CDB869461E9CDA200084F086 /* WeatherServiceImpl.swift */,
+			);
+			path = WheatherService;
+			sourceTree = "<group>";
+		};
 		CDE8A7311E2E6F2B00B14CCB = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +276,7 @@
 			children = (
 				CD49E9FE1E30C80F00F089CA /* URLExtension.swift */,
 				CD49EA021E30CE5F00F089CA /* URNBuilder.swift */,
+				CDB8691F1E9CCF7D0084F086 /* APIError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -241,6 +284,8 @@
 		CDE8A7511E2E6FC200B14CCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CDB869411E9CD8170084F086 /* CurrentWeather.swift */,
+				CDB869481E9CDF3D0084F086 /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +296,8 @@
 				CDE8A7591E2E71C600B14CCB /* ServicesAssemblyProtocol.swift */,
 				CDE8A7571E2E715B00B14CCB /* ServicesAssembly.swift */,
 				CDE8A75B1E2E723E00B14CCB /* ServicesAssemblyImpl.swift */,
+				CDB869141E9CC4BD0084F086 /* APIService */,
+				CDB869431E9CD9C20084F086 /* WheatherService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -420,7 +467,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C443C28B1E6A1971A42A1143 /* [CP] Copy Pods Resources */ = {
@@ -460,11 +507,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB8691C1E9CCDD60084F086 /* RequestBuilder.swift in Sources */,
+				CDB869161E9CC5130084F086 /* APIService.swift in Sources */,
 				CDE8A76B1E2E797200B14CCB /* AppRouter.swift in Sources */,
 				CDE8A7621E2E740900B14CCB /* PresentationAssembly.swift in Sources */,
 				CDE8A76D1E2E79B800B14CCB /* ModuleFactoryProtocol.swift in Sources */,
 				CDE8A7671E2E755300B14CCB /* InAppNotificationsProviderImpl.swift in Sources */,
 				CDE8A75E1E2E735700B14CCB /* ApplicationRoot.swift in Sources */,
+				CDB869471E9CDA200084F086 /* WeatherServiceImpl.swift in Sources */,
 				CDE8A7601E2E73FC00B14CCB /* PresentationAssemblyProtocol.swift in Sources */,
 				CDE8A7581E2E715B00B14CCB /* ServicesAssembly.swift in Sources */,
 				CDE8A7651E2E754900B14CCB /* InAppNotificationsProvider.swift in Sources */,
@@ -475,24 +525,31 @@
 				CDE8A75C1E2E723E00B14CCB /* ServicesAssemblyImpl.swift in Sources */,
 				0315942524F37045352B3D10 /* StartScreenFactory.swift in Sources */,
 				0919722E805A789BF96FAD10 /* StartScreenViewInput.swift in Sources */,
+				CDB869421E9CD8170084F086 /* CurrentWeather.swift in Sources */,
 				E6E35B61311E3E6C700C3D93 /* StartScreenViewOutput.swift in Sources */,
 				CD49E9FF1E30C80F00F089CA /* URLExtension.swift in Sources */,
 				101B1EFCE1882BF088067A83 /* StartScreenViewController.swift in Sources */,
+				CDB8691E1E9CCDE40084F086 /* RequestExecutorExtension.swift in Sources */,
 				CD49EA031E30CE5F00F089CA /* URNBuilder.swift in Sources */,
 				ED11DA9A1A4462311890BBDB /* StartScreenPresenter.swift in Sources */,
 				CCED45E270B2FB9392DFA6F5 /* StartScreenInteractorInput.swift in Sources */,
 				23899A163632510585A05975 /* StartScreenInteractor.swift in Sources */,
+				CDB869451E9CD9D10084F086 /* WeatherService.swift in Sources */,
 				1B30E5FE073B189AF69A47F6 /* StartScreenConfigurator.swift in Sources */,
 				FEDC8104A1233C9655C2964B /* StartScreenInitializer.swift in Sources */,
+				CDB869491E9CDF3D0084F086 /* City.swift in Sources */,
 				8DDB3F5543AA76884E8B2CC2 /* DetailsScreenFactory.swift in Sources */,
 				0BB04D0EADDCB8FB04248E90 /* DetailsScreenViewInput.swift in Sources */,
 				54C08E19F753935FCCB48250 /* DetailsScreenViewOutput.swift in Sources */,
+				CDB8691A1E9CCDB30084F086 /* APIServiceImpl.swift in Sources */,
+				CDB869181E9CCD990084F086 /* RequestExecutor.swift in Sources */,
 				440CCE4E7CA4678900187AAD /* DetailsScreenViewController.swift in Sources */,
 				6D02DBB659E1BAB641F01738 /* DetailsScreenPresenter.swift in Sources */,
 				0EA8EF6AF3D531558BA86975 /* DetailsScreenInteractorInput.swift in Sources */,
 				666C90EA93C164E9C61C5C10 /* DetailsScreenInteractor.swift in Sources */,
 				4F06DEC6C60E7B6BDBE67D50 /* DetailsScreenConfigurator.swift in Sources */,
 				C290175F01EFE918AE3B4093 /* DetailsScreenInitializer.swift in Sources */,
+				CDB869201E9CCF7D0084F086 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

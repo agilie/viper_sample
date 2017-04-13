@@ -10,22 +10,31 @@ import UIKit
 
 class DetailsScreenViewController: UIViewController {
 
+    // MARK:
+    var output: DetailsScreenViewOutput!
+    var cityId: Int = 0
+    var weather: CurrentWeather?
+
    	// MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Details Screen"
-        titleLabel.text = titleParameter
+        if let city = output.city(with: cityId) {
+            title = city.title
+        }
         output.viewIsReady()
+        output.requestWeather(for: cityId)
     }
     
     // MARK: Handlers
-
-    // MARK:
-    var output: DetailsScreenViewOutput!
-    var titleParameter: String?
     
     // MARK: Outlets
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var pressureLabel: UILabel!
+    @IBOutlet weak var windLabel: UILabel!
+    @IBOutlet weak var cloundsLabel: UILabel!
+    @IBOutlet weak var visibilityLabel: UILabel!
     
 }
 
@@ -33,7 +42,7 @@ class DetailsScreenViewController: UIViewController {
 extension DetailsScreenViewController: ModuleInputProtocol {
 
     func setupInitialState(withArguments args: NamedValuesType, completion: ModuleCompletionHandler?) {
-        titleParameter = args["title"] as? String
+        cityId = Int(args["cityId"] as! String)!
         output.setupInitialState(withArguments: args, completion: completion)
     }
 }
@@ -41,4 +50,23 @@ extension DetailsScreenViewController: ModuleInputProtocol {
 // MARK:
 extension DetailsScreenViewController: DetailsScreenViewInput {
 
+    func assignWeather(_ weather: CurrentWeather) {
+        self.weather = weather
+        reloadUI()
+    }
+    
+}
+
+extension DetailsScreenViewController {
+    
+    func reloadUI() {
+        temperatureLabel.text = weather?.temperatureString
+        humidityLabel.text = weather?.humidityString
+        pressureLabel.text = weather?.pressureString
+        temperatureLabel.text = weather?.temperatureString
+        windLabel.text = weather?.windString
+        cloundsLabel.text = weather?.cloudsString
+        visibilityLabel.text = weather?.visibilityString
+    }
+    
 }

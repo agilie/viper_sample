@@ -10,12 +10,15 @@ import UIKit
 
 class ServicesAssemblyImpl: ServicesAssemblyProtocol {
     
-    init(application: UIApplication) {
-        self.application = application
-    }
-    
     let application: UIApplication
     //All Available Services should be here like
-    //let userService: UserServiceProtocol
+    let apiService: APIService
+    let weatherService: WeatherService
+
+    init(application: UIApplication) {
+        self.application = application
+        apiService = APIServiceImpl()
+        weatherService = WeatherServiceImpl(apiService: apiService)
+    }
     
 }

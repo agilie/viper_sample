@@ -12,5 +12,7 @@ protocol ServicesAssemblyProtocol {
     
     var application: UIApplication { get }
     //All Available Services should be here like
-    //var userService: UserServiceProtocol { get }
+    var apiService: APIService { get }
+    var weatherService: WeatherService { get }
+    
 }
