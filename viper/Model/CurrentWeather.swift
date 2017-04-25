@@ -11,14 +11,14 @@ import ObjectMapper
 
 class CurrentWeather: Mappable {
     
-    var clouds: Float = 0
-    var humidity: Float = 0
-    var pressure: Float = 0
-    var temperature: Float = 0
-    var city: String = ""
-    var windDegree: Float = 0
-    var windSpeed: Float = 0
-    var visibility: Float = 0
+    var clouds: Float?
+    var humidity: Float?
+    var pressure: Float?
+    var temperature: Float?
+    var city: String?
+    var windDegree: Float?
+    var windSpeed: Float?
+    var visibility: Float?
     
     required init?(map: Map) {
         mapping(map: map)
@@ -36,28 +36,45 @@ class CurrentWeather: Mappable {
     }
 
     var cloudsString: String {
-        return "Clouds: \(Int(clouds))%"
+        let valueString = stringValue(for: clouds)
+        return "Clouds: \(valueString)%"
     }
 
     var humidityString: String {
-        return "Humidity: \(Int(humidity))%"
+        let valueString = stringValue(for: humidity)
+        return "Humidity: \(valueString)%"
     }
     
     var pressureString: String {
-        return "Pressure: \(Int(pressure)) hPa"
+        let valueString = stringValue(for: pressure)
+        return "Pressure: \(valueString) hPa"
     }
     
     var temperatureString: String {
-        let celsius = (temperature - 273.15)
-        return "\(Int(celsius))º"
+        var valueString = "-"
+        if let temp = temperature {
+            valueString = "\(temp - 273.15)"
+        }
+        return "\(valueString)º"
     }
     
     var windString: String {
-        return "Wind: direction \(Int(windDegree))º, speed \(Int(windSpeed))m/s"
+        let valueStringDegree = stringValue(for: windDegree)
+        let valueStringSpeed = stringValue(for: windSpeed)
+        return "Wind: direction \(valueStringDegree)º, speed \(valueStringSpeed)m/s"
     }
 
     var visibilityString: String {
-        return "Visibility: \(Int(visibility)) meters"
+        let valueString = stringValue(for: visibility)
+        return "Visibility: \(valueString) meters"
+    }
+    
+}
+
+extension CurrentWeather {
+    
+    func stringValue(for value: Any?) -> String {
+        return value != nil ? "\(value!)" : "-"
     }
     
 }

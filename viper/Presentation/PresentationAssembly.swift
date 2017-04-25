@@ -15,10 +15,9 @@ class PresentationAssembly: PresentationAssemblyProtocol {
     var router: AppRouterProtocol!
     var whisper: InAppNotificationsProvider!
     
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
     func setup(withNavigation navigation: UINavigationController, modules: Array<ModuleFactoryProtocol>, urlScheme: String, services: ServicesAssemblyProtocol) {
         router = AppRouterImpl(withNavigation: navigation, modules: modules, urlScheme: urlScheme)
         whisper = InAppNotificationsProviderImpl(withNavigation: navigation)
     }
+    
 }

@@ -19,7 +19,6 @@ extension RequestExecutor {
                 reject(APIError(message: "Invalid request"))
                 return
             }
-            String(describing: self)
             self.runRequest(request: request) { (json, err) in
                 if let err = err {
                     reject(err)

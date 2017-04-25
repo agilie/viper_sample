@@ -221,13 +221,20 @@
 			path = ApiService;
 			sourceTree = "<group>";
 		};
-		CDB869431E9CD9C20084F086 /* WheatherService */ = {
+		CDB869431E9CD9C20084F086 /* WeatherService */ = {
 			isa = PBXGroup;
 			children = (
 				CDB869441E9CD9D10084F086 /* WeatherService.swift */,
 				CDB869461E9CDA200084F086 /* WeatherServiceImpl.swift */,
 			);
-			path = WheatherService;
+			path = WeatherService;
+			sourceTree = "<group>";
+		};
+		CDE037581EA9067800FEED75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CDE8A7311E2E6F2B00B14CCB = {
@@ -252,7 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE8A74F1E2E6FB400B14CCB /* Constants */,
-				CDE8A7501E2E6FBB00B14CCB /* Helpers */,
+				CDE8A7501E2E6FBB00B14CCB /* Extensions */,
 				CDE8A7511E2E6FC200B14CCB /* Model */,
 				CDE8A7521E2E6FC900B14CCB /* Services */,
 				CDE8A7531E2E6FD100B14CCB /* Presentation */,
@@ -271,13 +278,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		CDE8A7501E2E6FBB00B14CCB /* Helpers */ = {
+		CDE8A7501E2E6FBB00B14CCB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CD49E9FE1E30C80F00F089CA /* URLExtension.swift */,
 				CD49EA021E30CE5F00F089CA /* URNBuilder.swift */,
 				CDB8691F1E9CCF7D0084F086 /* APIError.swift */,
 			);
+			name = Extensions;
 			path = Helpers;
 			sourceTree = "<group>";
 		};
@@ -297,7 +305,7 @@
 				CDE8A7571E2E715B00B14CCB /* ServicesAssembly.swift */,
 				CDE8A75B1E2E723E00B14CCB /* ServicesAssemblyImpl.swift */,
 				CDB869141E9CC4BD0084F086 /* APIService */,
-				CDB869431E9CD9C20084F086 /* WheatherService */,
+				CDB869431E9CD9C20084F086 /* WeatherService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -310,6 +318,7 @@
 				CDE8A7541E2E6FD100B14CCB /* ApplicationRoot */,
 				CDE8A7551E2E6FD100B14CCB /* Routing */,
 				CDE8A7631E2E74B600B14CCB /* InAppNotifications */,
+				CDE037581EA9067800FEED75 /* Views */,
 				CDE8A7561E2E6FD100B14CCB /* UserStories */,
 			);
 			path = Presentation;
