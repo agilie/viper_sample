@@ -14,7 +14,7 @@ protocol StartScreenViewOutput {
 	func setupInitialState(withArguments args: NamedValuesType, completion: ModuleCompletionHandler?)
   	func viewIsReady()
     
-    func showNextScreen(parameter: String)
+    func showWeatherDetails(cityId: Int)
     var cities: [City] { get }
     
 }

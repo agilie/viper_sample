@@ -18,5 +18,4 @@ project_group_path: viper/Presentation/UserStories
 
 ### Templates
 templates:
-#- {name: swift_viper_simple, local: '/Users/avilov/Documents/work/git/swift_viper_simple'}
-- {name: swift_viper_simple, git: 'https://github.com/savilov/swift_viper_simple.git'}
+- {name: swift_viper_template, git: 'https://github.com/agilie/swift_viper_template.git'}

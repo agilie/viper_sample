@@ -26,7 +26,7 @@ extension RequestExecutor {
                     if let obj = Mapper<ResultType>(context: nil).map(JSONObject: json) {
                         fullfit(obj)
                     } else {
-                        reject(APIError(message: "Parsing error"))
+                        reject(APIError(message: "Mapping error"))
                     }
                 }
             }

@@ -28,10 +28,9 @@ extension StartScreenPresenter: StartScreenViewOutput {
             
     }
     
-    func showNextScreen(parameter: String) {
-        let title = parameter.replacingOccurrences(of: " ", with: "_")
-        let urn = DetailsScreenFactory.shared.createModuleURN(title: title)
-        self.router.pushModule(byUrn: urn, animated: true) { (_) in
+    func showWeatherDetails(cityId: Int) {
+        let urn = DetailsScreenFactory.shared.createModuleURN(cityId: cityId)
+        self.router.pushModule(byUrn: urn, animated: true) { (parameters) in
             
         }
     }

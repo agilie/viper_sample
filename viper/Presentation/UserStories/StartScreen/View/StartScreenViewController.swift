@@ -12,9 +12,6 @@ class StartScreenViewController: UIViewController {
 
     // MARK:
     var output: StartScreenViewOutput!
-    lazy var cities: [String] = {
-        return ["Kyiv", "New York", "Paris", "Madrid", "Liverpool"]
-    }()
 
    	// MARK: Life cycle
     override func viewDidLoad() {
@@ -77,7 +74,7 @@ extension StartScreenViewController: UITableViewDelegate {
 extension StartScreenViewController {
     
     func showWeather(for cityId: Int) {
-        self.output.showNextScreen(parameter: "\(cityId)")
+        self.output.showWeatherDetails(cityId: cityId)
     }
 
 }

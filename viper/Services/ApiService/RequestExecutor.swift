@@ -14,7 +14,7 @@ class RequestExecutor {
     
     // MARK:
     fileprivate let builder: RequestBuilder
-    fileprivate let congiguration: URLSessionConfiguration = URLSessionConfiguration.default
+    fileprivate let configuration: URLSessionConfiguration = URLSessionConfiguration.default
     fileprivate let queue: DispatchQueue
     fileprivate let session: SessionManager
 
@@ -22,7 +22,7 @@ class RequestExecutor {
     init(requestBuilder: RequestBuilder) {
         queue = DispatchQueue.global(qos: .utility)
         builder = requestBuilder
-        session = SessionManager(configuration: congiguration)
+        session = SessionManager(configuration: configuration)
     }
 
     // MARK:

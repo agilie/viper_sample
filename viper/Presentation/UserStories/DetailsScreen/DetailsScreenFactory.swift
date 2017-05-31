@@ -38,8 +38,8 @@ struct DetailsScreenFactory : ModuleFactoryProtocol {
     }
 
     // MARK: Helpers
-    func createModuleURN(title: String) -> String {
-        return URNBuilder(string: moduleURN).buildWithArgs(args: [title])
+    func createModuleURN(cityId: Int) -> String {
+        return URNBuilder(string: moduleURN).buildWithArgs(args: ["\(cityId)"])
     }
     
     // MARK:

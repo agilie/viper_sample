@@ -53,7 +53,7 @@ class CurrentWeather: Mappable {
     var temperatureString: String {
         var valueString = "-"
         if let temp = temperature {
-            valueString = "\(temp - 273.15)"
+            valueString = "\(Int(temp - 273.15))"
         }
         return "\(valueString)º"
     }

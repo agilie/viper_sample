@@ -13,7 +13,6 @@ class DetailsScreenViewController: UIViewController {
     // MARK:
     var output: DetailsScreenViewOutput!
     var cityId: Int = 0
-    var weather: CurrentWeather?
 
    	// MARK: Life cycle
     override func viewDidLoad() {
@@ -51,22 +50,21 @@ extension DetailsScreenViewController: ModuleInputProtocol {
 extension DetailsScreenViewController: DetailsScreenViewInput {
 
     func assignWeather(_ weather: CurrentWeather) {
-        self.weather = weather
-        reloadUI()
+        reloadUI(with: weather)
     }
     
 }
 
 extension DetailsScreenViewController {
     
-    func reloadUI() {
-        temperatureLabel.text = weather?.temperatureString
-        humidityLabel.text = weather?.humidityString
-        pressureLabel.text = weather?.pressureString
-        temperatureLabel.text = weather?.temperatureString
-        windLabel.text = weather?.windString
-        cloundsLabel.text = weather?.cloudsString
-        visibilityLabel.text = weather?.visibilityString
+    func reloadUI(with weather: CurrentWeather) {
+        temperatureLabel.text = weather.temperatureString
+        humidityLabel.text = weather.humidityString
+        pressureLabel.text = weather.pressureString
+        temperatureLabel.text = weather.temperatureString
+        windLabel.text = weather.windString
+        cloundsLabel.text = weather.cloudsString
+        visibilityLabel.text = weather.visibilityString
     }
     
 }

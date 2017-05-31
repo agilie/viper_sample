@@ -32,6 +32,7 @@ extension DetailsScreenPresenter: DetailsScreenViewOutput {
     }
     
     func requestWeather(for cityId: Int) {
+        //show progress indicator if needed
         interactor.obtainCurrentWeather(for: cityId)
         .then { (weather) -> Void in
             if self.view != nil {
@@ -42,6 +43,9 @@ extension DetailsScreenPresenter: DetailsScreenViewOutput {
             if let viewController = self.view as? UIViewController {
                 self.showError(error, for: viewController)
             }
+        }
+        .always {
+            //hide progress indicator if shown
         }
     }
 
